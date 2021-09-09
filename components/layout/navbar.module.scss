@@ -101,6 +101,10 @@
         border-radius: 4px;
         border: solid 1px;
         color: $font-second-color;
+
+        &:hover {
+          color: $font-first-color;
+        }
       }
     }
   }
