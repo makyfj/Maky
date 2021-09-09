@@ -1,33 +1,26 @@
-import React from "react";
+// components
+import { experiences } from "./experiences.js";
+import classes from "./experience.module.scss";
 
 const Experience = () => {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-        aliquam molestiae officia atque eligendi aliquid odit! Adipisci et
-        aliquam cumque ducimus quos. Error praesentium eius vel doloribus
-        doloremque maxime unde.
-      </p>
-      <p>
-        Distinctio vel eaque ducimus quas odio provident, mollitia reiciendis
-        illum nobis sit veritatis aut minus voluptatum dolorem, eos deserunt
-        quam libero illo fugit aspernatur nihil dolorum temporibus? Perferendis,
-        minima culpa!
-      </p>
-      <p>
-        Veniam suscipit quisquam fugit nihil commodi, reprehenderit vitae saepe
-        rem quibusdam doloribus repudiandae! Corporis harum officiis ab? Dolores
-        veniam maiores itaque molestiae recusandae beatae explicabo placeat odit
-        nesciunt, sed ipsam?
-      </p>
-      <p>
-        Ipsum est, porro quis architecto a dolor minima similique debitis!
-        Totam, eius architecto corporis voluptatum ipsum ad accusantium ea
-        reprehenderit impedit ratione consequuntur, harum mollitia incidunt aut
-        quidem tempora exercitationem!
-      </p>
-    </div>
+    <section className={classes.experiences}>
+      <h1 className={classes.title}>Experience</h1>
+      <ul className={classes.experience}>
+        {experiences.map((experience) => (
+          <li key={experience.id}>
+            <h2>{experience.title}</h2>
+            <h3>{experience.subTitle}</h3>
+            <p>Skills: {experience.skills}</p>
+            <ul className={classes.bulletPoint}>
+              {experience.bulletPoints.map((bullet) => (
+                <li key={experience.id}>{bullet}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

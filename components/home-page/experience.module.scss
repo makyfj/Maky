@@ -1,0 +1,44 @@
+@import "../../styles/variables/variables.scss";
+
+.experiences {
+  background-color: $background-fifth-color;
+  color: $font-first-color;
+
+  .title {
+    text-align: center;
+    box-shadow: 0 1px 8px;
+    padding-top: 3rem;
+  }
+
+  .experience {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    align-items: center;
+
+    li {
+      margin: 0 1rem;
+
+      h2 {
+        margin: 1rem 0;
+        color: $font-second-color;
+      }
+
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .bulletPoint {
+        margin-bottom: 1rem;
+
+        li {
+          list-style-type: circle;
+        }
+      }
+    }
+  }
+}
