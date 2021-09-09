@@ -1,4 +1,5 @@
 @import "../../styles/variables/variables.scss";
+@import "../../styles/mixins/mixins.scss";
 
 .footer {
   text-align: center;
@@ -6,4 +7,13 @@
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-evenly;
+}
+
+@include footer-mobile {
+  .footer {
+    flex-direction: column;
+    a {
+      margin-bottom: 1rem;
+    }
+  }
 }
