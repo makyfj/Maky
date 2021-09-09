@@ -1,0 +1,8 @@
+@import "../../styles/variables/variables.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.logo {
+  text-transform: uppercase;
+  font-size: $font-third-size;
+  font-weight: bold;
+}

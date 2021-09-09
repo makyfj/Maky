@@ -1,7 +1,7 @@
-import React from "react";
+import classes from "./logo.module.scss";
 
 const Logo = () => {
-  return <div>Franklin :)</div>;
+  return <div className={classes.logo}>Franklin</div>;
 };
 
 export default Logo;

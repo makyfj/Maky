@@ -1,6 +1,9 @@
 import { useState } from "react";
-import Logo from "./logo";
 import Link from "next/link";
+import ReorderIcon from "@material-ui/icons/Reorder";
+
+// components
+import Logo from "./logo";
 import classes from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -36,7 +39,7 @@ const Navbar = () => {
           className={classes.burger}
           onClick={() => setShowLinks(!showLinks)}
         >
-          Boom
+          <ReorderIcon />
         </button>
       </div>
     </header>
