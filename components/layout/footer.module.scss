@@ -6,6 +6,10 @@
   background-color: $background-first-color;
   padding: 1.5rem 0;
 
+  h1 {
+    padding: 1.5rem 0;
+  }
+
   ul {
     display: flex;
     justify-content: center;
@@ -13,6 +17,8 @@
     li {
       margin: 0 1rem;
       color: $font-first-color;
+      font-size: $font-first-size;
+      padding-bottom: 1.5rem;
 
       a {
         color: $font-second-color;
