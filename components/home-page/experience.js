@@ -8,13 +8,15 @@ const Experience = () => {
       <h1 className={classes.title}>Experience</h1>
       <ul className={classes.experience}>
         {experiences.map((experience) => (
-          <li key={experience.id}>
+          <li key={`e-${experience.id}`}>
             <h2>{experience.title}</h2>
             <h3>{experience.subTitle}</h3>
             <p>Skills: {experience.skills}</p>
             <ul className={classes.bulletPoint}>
-              {experience.bulletPoints.map((bullet) => (
-                <li key={experience.id}>{bullet}</li>
+              {experience.bulletPoints.map((bullet, index) => (
+                <li key={`b-${index}`}>
+                  <p>{bullet}</p>
+                </li>
               ))}
             </ul>
           </li>
