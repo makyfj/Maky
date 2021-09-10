@@ -1,5 +1,5 @@
 // components
-import { experiences } from "./experiences.js";
+import { experiences } from "../../data/experiences";
 import classes from "./experience.module.scss";
 
 const Experience = () => {
