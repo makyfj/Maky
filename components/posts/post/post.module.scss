@@ -1,0 +1,36 @@
+@import "../../../styles/variables/variables.scss";
+
+.container {
+  // footer stay mf down >:)
+  min-height: 80vh;
+  background-color: $background-third-color;
+  padding-top: 4rem;
+  box-shadow: 0 1px 8px;
+
+  h1 {
+    text-align: center;
+    color: $font-third-color;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $font-third-color;
+    font-size: $font-second-size;
+    margin-top: 2rem;
+
+    input {
+      padding: 0.6rem;
+      background-color: $background-first-color;
+      border-radius: 4px;
+      color: $font-second-color;
+      font-size: $font-first-size;
+
+      &::placeholder {
+        color: $font-third-color;
+        font-size: $font-first-size;
+      }
+    }
+  }
+}

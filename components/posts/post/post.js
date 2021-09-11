@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchIcon from "@material-ui/icons/Search";
 
 // components
 import classes from "./post.module.scss";
@@ -15,15 +16,20 @@ const PostPage = ({ posts }) => {
 
   return (
     <main className={classes.container}>
-      <h1>Posts: ({posts.length} posts)</h1>
-      <input
-        type="text"
-        aria-label="Search by title"
-        placeholder="Search by title"
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
+      <h1>Total posts: ({posts.length} posts)</h1>
+      <div className={classes.search}>
+        <SearchIcon fontSize="large" />
+        <input
+          type="text"
+          aria-label="Search by title"
+          placeholder="Search by title"
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+      </div>
 
-      {!filteredPosts.length && "No posts found :(, try it again"}
+      <div className={classes.none}>
+        {!filteredPosts.length && "No posts found :(, try it again"}
+      </div>
       {filteredPosts.map((frontMatter, index) => (
         <ul key={index}>
           <li>
