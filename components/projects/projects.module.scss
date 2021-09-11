@@ -2,13 +2,12 @@
 @import "../../styles/mixins/mixins.scss";
 
 .container {
-  background-color: $background-fifth-color;
+  background-color: $background-third-color;
 
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    box-shadow: 0 1px 8px;
     padding: 4rem;
 
     .project {
