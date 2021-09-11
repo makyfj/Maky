@@ -1,17 +1,72 @@
 @import "../../styles/variables/variables.scss";
+@import "../../styles/media-query/media-query.scss";
 
 .container {
   background-color: $background-second-color;
-  box-shadow: 0 1px 8px white;
+  box-shadow: 0 1px 8px $background-second-color;
   padding: 2rem;
   margin: 2rem;
+  cursor: pointer;
 
   .card {
-    background-color: white;
-
     h1 {
       text-align: center;
       color: $font-third-color;
+    }
+
+    .contents {
+      display: flex;
+      align-items: center;
+
+      .image {
+        margin: 0 1rem;
+        height: 100%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .time {
+          font-size: $font-second-size;
+          margin: 1rem 0;
+          width: 100%;
+
+          span {
+            color: $font-second-color;
+            font-weight: bold;
+          }
+        }
+
+        .summary {
+          margin: 1rem 0;
+          font-size: $font-second-size;
+          width: 100%;
+
+          span {
+            color: $font-second-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include posts-mobile {
+  .container {
+    .card {
+      .contents {
+        .content {
+          .time {
+            font-size: $font-first-half-size;
+          }
+          .summary {
+            font-size: $font-first-half-size;
+          }
+        }
+      }
     }
   }
 }

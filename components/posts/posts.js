@@ -1,17 +1,32 @@
 import Link from "next/link";
 import { parseISO, format } from "date-fns";
+import Image from "next/image";
 
 // components
 import classes from "./post.module.scss";
 
-const Posts = ({ title, date, summary, slug }) => {
+const Posts = ({ title, date, image, summary, slug }) => {
   return (
     <div className={classes.container}>
       <Link href={`/posts/${slug}`} passHref className={classes.link}>
         <div className={classes.card}>
           <h1>{title}</h1>
-          <time>Posted on: {format(parseISO(date), "MMMM dd, yyyy")}</time>
-          <p>{summary}</p>
+          <div className={classes.contents}>
+            <div className={classes.image}>
+              <Image src={image} alt={title} width={200} height={200} />
+            </div>
+
+            <div className={classes.content}>
+              <p className={classes.time}>
+                <span>Posted on: </span>
+                {format(parseISO(date), "MMMM dd, yyyy")}
+              </p>
+              <p className={classes.summary}>
+                <span>Summary: </span>
+                {summary}
+              </p>
+            </div>
+          </div>
         </div>
       </Link>
     </div>
