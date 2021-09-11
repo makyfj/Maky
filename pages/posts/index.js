@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Head from "next/head";
 import { getAllFilesFrontMatter } from "../../lib/mdx";
 import Post from "../../components/posts/post/post";
