@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
+import Link from "next/link";
 
 // components
 import classes from "./post.module.scss";
@@ -37,6 +38,9 @@ const PostPage = ({ posts }) => {
           </li>
         </ul>
       ))}
+      <Link href="/" passHref>
+        <button>Go Back</button>
+      </Link>
     </main>
   );
 };
