@@ -8,6 +8,7 @@
 
   h1 {
     padding: 1.5rem 0;
+    color: $font-third-color;
   }
 
   ul {
@@ -24,10 +25,14 @@
         color: $font-second-color;
 
         &:hover {
-          color: $font-first-color;
+          color: $font-third-color;
         }
       }
     }
+  }
+
+  p {
+    color: $font-third-color;
   }
 }
 

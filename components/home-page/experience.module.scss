@@ -3,11 +3,12 @@
 
 .experiences {
   background-color: $background-third-color;
-  color: $font-first-color;
 
   .title {
     text-align: center;
     padding-top: 3rem;
+    font-size: $font-third-size;
+    color: $font-third-color;
   }
 
   .experience {
@@ -16,27 +17,41 @@
     padding: 4rem;
     align-items: center;
 
-    li {
+    .content {
       margin: 0 1rem;
+      background-color: $background-second-color;
+      box-shadow: 0 1px 8px $background-fourth-color;
+      border-radius: 4px;
+      padding: 2rem;
 
       h2 {
         margin: 1rem 0;
+        text-align: center;
         color: $font-second-color;
       }
 
       h3 {
-        margin: 0.5rem 0;
+        text-align: center;
+        margin: 1rem 0;
+        color: $font-third-color;
       }
 
-      p {
+      .skills {
         margin: 0.5rem 0;
+        color: $font-third-color;
+        font-weight: bold;
       }
 
       .bulletPoint {
         margin-bottom: 1rem;
 
         li {
-          list-style-type: circle;
+          list-style-type: "* ";
+
+          p {
+            color: $font-first-color;
+            margin: 1rem 0;
+          }
         }
       }
     }
@@ -44,15 +59,24 @@
 }
 
 @include experience-mobile {
-  .experience {
-    flex-direction: column;
+  .experiences {
+    .experience {
+      flex-direction: column;
 
-    h2 {
-      text-align: center;
-    }
+      .content {
+        box-shadow: 0 1px 8px $background-fourth-color;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
 
-    h3 {
-      text-align: center;
+        h2 {
+          text-align: center;
+        }
+
+        h3 {
+          text-align: center;
+        }
+      }
     }
   }
 }

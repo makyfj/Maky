@@ -5,11 +5,11 @@ export const socials = [
   {
     id: 1,
     link: "https://github.com/makyfj",
-    icon: <GitHubIcon />,
+    icon: <GitHubIcon fontSize="large" />,
   },
   {
     id: 2,
     link: "https://linkein.com/franklinjara-fj",
-    icon: <LinkedInIcon />,
+    icon: <LinkedInIcon fontSize="large" />,
   },
 ];
