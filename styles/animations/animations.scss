@@ -1,14 +1,23 @@
-@mixin keyframes($animationName) {
-  @-webkit-keyframes #{$animationName} {
+// for in custom css
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+// function to include keyframes
+@mixin keyframes($name) {
+  @keyframes #{$name} {
     @content;
   }
-  @-moz-keyframes #{$animationName} {
-    @content;
-  }
-  @-o-keyframes #{$animationName} {
-    @content;
-  }
-  @keyframes #{$animationName} {
-    @content;
+}
+
+// slidein
+@mixin slidein {
+  @keyframes slidein {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
   }
 }

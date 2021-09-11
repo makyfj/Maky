@@ -19,10 +19,23 @@
 
     a {
       color: $font-second-color;
-
-      &:hover {
-        color: $font-third-color;
+      @include keyframes(fade) {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0;
+        }
       }
+
+      @include animate(fade, 1s, linear, 200);
+    }
+
+    &:hover {
+      color: $font-third-color;
 
       &:active {
         color: $font-third-color;
