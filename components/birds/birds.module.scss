@@ -1,9 +1,11 @@
 // this code is from here
 // https://codepen.io/matchboxhero/pen/RLebOY?editors=1100
 @import "../../styles/animations/animations.scss";
+@import "../../styles/media-query/media-query.scss";
 
 .container {
   .bird-container {
+    box-shadow: 0 1px 8px red;
     position: absolute;
     top: 10%;
     left: -10%;
@@ -15,22 +17,22 @@
     animation-iteration-count: infinite;
 
     &--one {
-      animation-duration: 15s;
+      animation-duration: 9s;
       animation-delay: 0;
     }
 
     &--two {
-      animation-duration: 16s;
-      animation-delay: 1s;
+      animation-duration: 8s;
+      animation-delay: 4s;
     }
 
     &--three {
-      animation-duration: 14.6s;
-      animation-delay: 9.5s;
+      animation-duration: 10s;
+      animation-delay: 8s;
     }
 
     &--four {
-      animation-duration: 16s;
+      animation-duration: 15s;
       animation-delay: 10.25s;
     }
 
@@ -71,3 +73,27 @@
 @include fly-cycle;
 @include fly-right-one;
 @include fly-right-two;
+
+@include birds-mobile(850px) {
+  .container {
+    .bird-container {
+      left: -14%;
+    }
+  }
+}
+
+@include birds-mobile(630px) {
+  .container {
+    .bird-container {
+      left: -17%;
+    }
+  }
+}
+
+@include birds-mobile(500px) {
+  .container {
+    .bird-container {
+      left: -19%;
+    }
+  }
+}

@@ -41,27 +41,39 @@
     }
 
     20% {
-      transform: translateY(0vh) translateX(30vw) scale(0.5);
+      transform: translateY(0vh) translateX(20vw) scale(0.5);
     }
 
     30% {
-      transform: translateY(4vh) translateX(50vw) scale(0.6);
+      transform: translateY(4vh) translateX(30vw) scale(0.6);
     }
 
     40% {
-      transform: translateY(2vh) translateX(70vw) scale(0.6);
+      transform: translateY(2vh) translateX(40vw) scale(0.6);
     }
 
     50% {
-      transform: translateY(0vh) translateX(90vw) scale(0.6);
+      transform: translateY(0vh) translateX(50vw) scale(0.6);
     }
 
     60% {
-      transform: translateY(0vh) translateX(110vw) scale(0.6);
+      transform: translateY(0vh) translateX(60vw) scale(0.6);
+    }
+    70% {
+      transform: translateY(0vh) translateX(70vw) scale(0.6);
+    }
+    80% {
+      transform: translateY(0vh) translateX(80vw) scale(0.6);
+    }
+    90% {
+      transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    92% {
+      transform: translateY(0vh) translateX(92vw) scale(0.6);
     }
 
     100% {
-      transform: translateY(0vh) translateX(110vw) scale(0.6);
+      transform: translateY(0vh) translateX(100vw) scale(0.6);
     }
   }
 }
@@ -77,11 +89,11 @@
     }
 
     20% {
-      transform: translateY(-4vh) translateX(30vw) scale(0.6);
+      transform: translateY(-4vh) translateX(20vw) scale(0.6);
     }
 
     30% {
-      transform: translateY(1vh) translateX(50vw) scale(0.45);
+      transform: translateY(1vh) translateX(30vw) scale(0.45);
     }
 
     40% {
@@ -93,11 +105,11 @@
     }
 
     51% {
-      transform: translateY(0vh) translateX(110vw) scale(0.45);
+      transform: translateY(0vh) translateX(51vw) scale(0.45);
     }
 
     100% {
-      transform: translateY(0vh) translateX(110vw) scale(0.45);
+      transform: translateY(0vh) translateX(100vw) scale(0.45);
     }
   }
 }
