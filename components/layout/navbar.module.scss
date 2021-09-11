@@ -1,5 +1,6 @@
 @import "../../styles//variables/variables.scss";
-@import "../../styles/mixins/mixins.scss";
+@import "../../styles/media-query/media-query.scss";
+@import "../../styles/animations/animations.scss";
 
 .header {
   width: 100%;
@@ -18,7 +19,6 @@
 
     a {
       color: $font-second-color;
-      text-shadow: $font-green-shadow;
 
       &:hover {
         color: $font-first-color;
