@@ -17,7 +17,11 @@ const PostsPage = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>Post - Franklin Jara</title>
+        <title>Posts</title>
+        <meta
+          name="description"
+          content="Software and web development tips to improve your coding skills"
+        />
       </Head>
       <div>
         <h1>Posts ({posts.length} posts)</h1>

@@ -3,15 +3,21 @@ import Head from "next/head";
 import { parseISO, format } from "date-fns";
 
 const PostLayout = ({ children, frontMatter }) => {
-  console.log(frontMatter);
-  console.log(children);
-
   const router = useRouter();
   const slug = router.asPath.replace("/posts/", "");
+  let slugCase = slug.split("-");
+
+  // Uppercase for the first word of each word
+  slugCase = slugCase
+    .map((word) => {
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(" ");
+
   return (
     <div>
       <Head>
-        <title>{slug} - Franklin Jara</title>
+        <title>{slugCase}</title>
       </Head>
       <h1>{frontMatter.title}</h1>
       <p>{frontMatter.summary}</p>

@@ -1,6 +1,6 @@
 import { MDXRemote } from "next-mdx-remote";
 import { getFiles, getFileBySlug } from "../../lib/mdx";
-import PostLayout from "../../layouts/post";
+import PostLayout from "../../layouts-mdx/post";
 import MDXComponents from "../../components/mdx/mdx-components";
 
 export default function Post({ mdxSource, frontMatter }) {
