@@ -3,10 +3,12 @@ import Image from "next/image";
 // components
 import Social from "./social";
 import classes from "./hero.module.scss";
+import Birds from "../birds/birds";
 
 const Hero = () => {
   return (
     <section className={classes.hero}>
+      <Birds />
       <div className={classes.image}>
         <Image
           src="/images/site/avatar.jpg"
