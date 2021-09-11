@@ -3,6 +3,12 @@
 
 .container {
   background-color: $background-third-color;
+  padding: 3rem 0;
+
+  .title {
+    color: $font-third-color;
+    text-align: center;
+  }
 
   .projects {
     display: grid;

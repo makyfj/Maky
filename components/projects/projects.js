@@ -3,10 +3,12 @@ import Image from "next/image";
 // components
 import { projects } from "../../data/projects";
 import classes from "./projects.module.scss";
+import Button from "../button/button";
 
 const Projects = () => {
   return (
-    <div className={classes.container}>
+    <main className={classes.container}>
+      <h1 className={classes.title}>My Favorite Projects</h1>
       <ul className={classes.projects}>
         {projects.map((project, index) => (
           <li key={index} className={classes.project}>
@@ -39,7 +41,9 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-    </div>
+
+      <Button href="/" name="home" />
+    </main>
   );
 };
 

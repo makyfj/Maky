@@ -5,6 +5,7 @@ import Link from "next/link";
 // components
 import classes from "./post.module.scss";
 import Posts from "../posts";
+import Button from "../../button/button";
 
 const PostPage = ({ posts }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -38,9 +39,7 @@ const PostPage = ({ posts }) => {
           </li>
         </ul>
       ))}
-      <Link href="/" passHref>
-        <button>Home</button>
-      </Link>
+      <Button href="/" name="Home" />
     </main>
   );
 };

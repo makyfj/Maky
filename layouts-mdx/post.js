@@ -4,6 +4,7 @@ import { parseISO, format } from "date-fns";
 
 // components
 import classes from "./post.module.scss";
+import Button from "../components/button/button";
 
 const PostLayout = ({ children, frontMatter }) => {
   const router = useRouter();
@@ -36,6 +37,7 @@ const PostLayout = ({ children, frontMatter }) => {
           </p>
           <div className={classes.content}>{children}</div>
         </article>
+        <Button href="/posts" name="All Posts" />
       </main>
     </>
   );

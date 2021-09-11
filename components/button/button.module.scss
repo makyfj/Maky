@@ -1,0 +1,12 @@
+@import "../../styles/variables/variables.scss";
+
+.button {
+  margin: 3rem auto;
+  display: block;
+  padding: 0.8rem;
+  background-color: $background-second-color;
+  box-shadow: 0 1px 8px $background-fourth-color;
+  color: $font-third-color;
+  border-radius: 4px;
+  font-size: $font-second-size;
+}
