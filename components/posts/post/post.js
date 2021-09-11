@@ -39,7 +39,7 @@ const PostPage = ({ posts }) => {
         </ul>
       ))}
       <Link href="/" passHref>
-        <button>Go Back</button>
+        <button>Home</button>
       </Link>
     </main>
   );

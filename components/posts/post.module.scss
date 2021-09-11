@@ -3,7 +3,7 @@
 
 .container {
   background-color: $background-second-color;
-  box-shadow: 0 1px 8px $background-second-color;
+  box-shadow: 0 1px 8px $background-fourth-color;
   border-radius: 4px;
   padding: 2rem;
   margin: 2rem;
@@ -12,7 +12,7 @@
   .card {
     h1 {
       text-align: center;
-      color: $font-third-color;
+      color: $font-second-color;
     }
 
     .contents {
@@ -30,23 +30,23 @@
         width: 100%;
 
         .time {
-          font-size: $font-second-size;
+          font-size: $font-first-half-size;
           margin: 1rem 0;
           width: 100%;
 
           span {
-            color: $font-second-color;
+            color: $font-third-color;
             font-weight: bold;
           }
         }
 
         .summary {
           margin: 1rem 0;
-          font-size: $font-second-size;
+          font-size: $font-first-half-size;
           width: 100%;
 
           span {
-            color: $font-second-color;
+            color: $font-third-color;
             font-weight: bold;
           }
         }

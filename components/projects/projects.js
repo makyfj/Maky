@@ -20,8 +20,14 @@ const Projects = () => {
               />
             </div>
             <h1>{project.title}</h1>
-            <p className={classes.description}>{project.description}</p>
-            <p className={classes.skills}>Skills: {project.skills}</p>
+            <p className={classes.description}>
+              <span>Description: </span>
+              {project.description}
+            </p>
+            <p className={classes.skills}>
+              <span>Skills: </span>
+              {project.skills}
+            </p>
             <ul className={classes.links}>
               <li>
                 <a href={project.github}>{project.gitHubIcon} GitHub</a>

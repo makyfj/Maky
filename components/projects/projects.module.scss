@@ -6,12 +6,12 @@
 
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     padding: 4rem;
 
     .project {
-      box-shadow: 0 1px 8px $background-second-color;
+      box-shadow: 0 1px 8px $background-fourth-color;
       border-radius: 4px;
       padding: 1rem;
       background-color: $background-second-color;
@@ -30,16 +30,24 @@
       }
 
       .description {
-        color: $font-third-color;
+        color: $font-first-color;
         padding: 0.5rem 0;
+        span {
+          color: $font-third-color;
+        }
       }
 
       .skills {
-        color: $font-second-color;
+        color: $font-first-color;
         padding: 0.5rem 0;
+
+        span {
+          color: $font-third-color;
+        }
       }
 
       .links {
+        margin: 1rem 0;
         display: flex;
         justify-content: space-around;
 
@@ -53,7 +61,15 @@
   }
 }
 
-@include projects-mobile(850px) {
+@include projects-mobile(1250px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@include projects-mobile(900px) {
   .container {
     .projects {
       grid-template-columns: 1fr;
