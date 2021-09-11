@@ -1,4 +1,5 @@
 @import "../../styles/variables/variables.scss";
+@import "../../styles/media-query/media-query.scss";
 
 .hero {
   text-align: center;
@@ -21,12 +22,20 @@
 
   p {
     font-size: $font-second-size;
-    margin: 0 4rem;
+    margin: 0 10rem;
     color: $font-third-color;
 
     span {
       font-weight: bold;
       font-size: $font-third-size;
+    }
+  }
+}
+
+@include hero-mobile(800px) {
+  .hero {
+    p {
+      margin: 0 4rem;
     }
   }
 }
