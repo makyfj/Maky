@@ -1,0 +1,52 @@
+@import "../../styles/variables/variables.scss";
+
+.container {
+  background-color: $background-third-color;
+  padding: 4rem;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .skills {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-areas:
+      "front"
+      "end"
+      "programming"
+      "other";
+    justify-items: stretch;
+    box-shadow: 0 1px 8px red;
+
+    .front {
+      grid-area: front;
+      box-shadow: 0 1px 8px $background-fourth-color;
+      display: flex;
+      justify-content: space-evenly;
+
+      h3 {
+        box-shadow: 0 1px 8px green;
+        margin-top: 3rem;
+      }
+    }
+
+    .back {
+      grid-area: end;
+      box-shadow: 0 1px 8px $background-fourth-color;
+      display: flex;
+    }
+
+    .programming {
+      grid-area: programming;
+      box-shadow: 0 1px 8px $background-fourth-color;
+    }
+
+    .other {
+      grid-area: other;
+      box-shadow: 0 1px 8px $background-fourth-color;
+    }
+  }
+}
