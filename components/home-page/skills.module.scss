@@ -13,42 +13,7 @@
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
-    grid-template-areas:
-      "front"
-      "end"
-      "programming"
-      "other";
+    grid-template-columns: 1fr;
     justify-items: stretch;
-    box-shadow: 0 1px 8px red;
-
-    .front {
-      grid-area: front;
-      padding: 1rem 0;
-      box-shadow: 0 1px 8px $background-fourth-color;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      h3 {
-        box-shadow: 0 1px 8px green;
-        justify-self: center;
-      }
-    }
-
-    .back {
-      grid-area: end;
-      box-shadow: 0 1px 8px $background-fourth-color;
-      display: flex;
-    }
-
-    .programming {
-      grid-area: programming;
-      box-shadow: 0 1px 8px $background-fourth-color;
-    }
-
-    .other {
-      grid-area: other;
-      box-shadow: 0 1px 8px $background-fourth-color;
-    }
   }
 }
