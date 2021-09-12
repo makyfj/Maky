@@ -1,5 +1,6 @@
 @import "../../styles/variables/variables.scss";
 @import "../../styles/media-query/media-query.scss";
+@import "../../styles/animations/animations.scss";
 
 .container {
   background-color: $background-third-color;
@@ -22,6 +23,10 @@
       border-radius: 4px;
       padding: 1rem;
       background-color: $background-second-color;
+
+      &:hover {
+        @include card-hover($background-fourth-color);
+      }
 
       .image {
         display: flex;

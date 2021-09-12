@@ -1,4 +1,5 @@
 @import "../../styles/variables/variables.scss";
+@import "../../styles/animations/animations.scss";
 
 .button {
   margin: 3rem auto;
@@ -9,4 +10,8 @@
   color: $font-third-color;
   border-radius: 4px;
   font-size: $font-second-size;
+
+  &:hover {
+    @include button-hover;
+  }
 }

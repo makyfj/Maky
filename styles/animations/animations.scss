@@ -1,6 +1,7 @@
 // for in custom css
 @mixin animate($animation, $duration, $method, $times) {
   animation: $animation $duration $method $times;
+  @content;
 }
 
 // function to include keyframes
@@ -22,6 +23,26 @@
   }
 }
 
+// Hover text
+@mixin text-hover {
+  text-shadow: 2px 2px $background-fourth-color;
+  transform: scale(0.6);
+}
+
+// Hover card
+@mixin card-hover($background) {
+  box-shadow: 0 6px 10px $background;
+  transform: scale(1.05);
+}
+
+// Hover button
+@mixin button-hover {
+  box-shadow: 0 5px 10px $background-fourth-color;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+// Birds animations
 @mixin fly-cycle {
   @keyframes fly-cycle {
     100% {

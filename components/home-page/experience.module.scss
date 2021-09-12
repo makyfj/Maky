@@ -1,5 +1,6 @@
 @import "../../styles/variables/variables.scss";
 @import "../../styles/media-query/media-query.scss";
+@import "../../styles/animations/animations.scss";
 
 .experiences {
   background-color: $background-third-color;
@@ -23,6 +24,9 @@
       box-shadow: 0 1px 8px $background-fourth-color;
       border-radius: 4px;
       padding: 2rem;
+      &:hover {
+        @include card-hover($background-fourth-color);
+      }
 
       h2 {
         margin: 1rem 0;

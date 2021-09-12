@@ -31,7 +31,7 @@
         }
       }
 
-      @include animate(fade, 1s, linear, 200);
+      @include animate(fade, 1s, linear, infinite);
     }
 
     &:hover {
@@ -70,6 +70,7 @@
 
             &:hover {
               color: $font-second-color;
+              @include text-hover;
             }
 
             &:active {

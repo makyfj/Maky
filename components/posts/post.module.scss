@@ -1,13 +1,18 @@
 @import "../../styles/variables/variables.scss";
 @import "../../styles/media-query/media-query.scss";
+@import "../../styles/animations/animations.scss";
 
 .container {
   background-color: $background-second-color;
   box-shadow: 0 1px 8px $background-fourth-color;
   border-radius: 4px;
   padding: 2rem;
-  margin: 2rem;
+  margin: 2rem 4rem;
   cursor: pointer;
+
+  &:hover {
+    @include card-hover($background-fourth-color);
+  }
 
   .card {
     h1 {
