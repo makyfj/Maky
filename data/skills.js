@@ -86,13 +86,13 @@ export const programmingSkills = [
 ];
 
 export const otherSkills = [
-  { name: "Data Structures and Algorithms" },
-  { name: "Object Oriented Programming" },
-  { name: "Software Design and Architectures" },
+  { name: "Data Structures" },
+  { name: "Algorithms" },
+  { name: "OOP" },
   { name: "Agile" },
   { name: "Git" },
   { name: "NPM" },
   { name: "Yarn" },
-  { name: "PyTorch" },
-  { name: "R" },
+  { name: "REST" },
+  { name: "API" },
 ];

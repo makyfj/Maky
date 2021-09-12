@@ -1,14 +1,31 @@
 @import "../../../../styles/variables/variables.scss";
+@import "../../../../styles/animations/animations.scss";
+@import "../../../../styles/media-query/media-query.scss";
 
-.skill {
+.title {
+  text-align: center;
+  color: $font-second-color;
+}
+
+.skills {
   padding: 1rem 0;
+  background-color: $background-second-color;
   box-shadow: 0 1px 8px $background-fourth-color;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
-  h3 {
-    box-shadow: 0 1px 8px green;
-    justify-self: center;
+  &:hover {
+    @include card-hover($background-fourth-color);
+  }
+}
+
+@include skills-mobile(800px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.5rem 1rem;
+    justify-items: center;
   }
 }

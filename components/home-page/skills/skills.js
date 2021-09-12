@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import classes from "./skills.module.scss";
 import {
   frontEndSkills,
@@ -8,6 +6,7 @@ import {
   otherSkills,
 } from "../../../data/skills";
 import Skill from "./skill-item/skill-item";
+import Button from "../../button/button";
 
 const Skills = () => {
   return (
@@ -19,6 +18,7 @@ const Skills = () => {
         <Skill skills={programmingSkills} title="Programming Languages" />
         <Skill skills={otherSkills} title="Other Skills" />
       </div>
+      <Button href="/" name="Go Up" />
     </aside>
   );
 };
