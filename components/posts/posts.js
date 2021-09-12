@@ -13,7 +13,7 @@ const Posts = ({ title, date, image, summary, slug }) => {
           <h1>{title}</h1>
           <div className={classes.contents}>
             <div className={classes.image}>
-              <Image src={image} alt={title} width={200} height={200} />
+              <Image src={image} alt={title} width={400} height={300} />
             </div>
 
             <div className={classes.content}>
