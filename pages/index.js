@@ -3,6 +3,7 @@ import Head from "next/head";
 // component
 import Hero from "../components/home-page/hero";
 import Experience from "../components/home-page/experience";
+import Skills from "../components/home-page/skills";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Experience />
+      <Skills />
     </>
   );
 }
