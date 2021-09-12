@@ -1,0 +1,12 @@
+@import "../../styles/variables/variables.scss";
+
+.container {
+  min-height: 90vh;
+  background-color: $background-third-color;
+
+  h1 {
+    text-align: center;
+    padding-top: 22rem;
+    color: $font-third-color;
+  }
+}
