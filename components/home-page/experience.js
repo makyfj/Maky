@@ -11,6 +11,7 @@ const Experience = () => {
           <li key={`e-${experience.id}`} className={classes.content}>
             <h2>{experience.title}</h2>
             <h3>{experience.subTitle}</h3>
+            <p className={classes.date}>Date: {experience.date}</p>
             <p className={classes.skills}>Skills: {experience.skills}</p>
             <ul className={classes.bulletPoint}>
               {experience.bulletPoints.map((bullet, index) => (

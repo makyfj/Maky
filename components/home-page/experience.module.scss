@@ -14,9 +14,10 @@
 
   .experience {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 4rem;
-    align-items: center;
+    align-content: stretch;
+    align-items: stretch;
 
     .content {
       margin: 0 1rem;
@@ -40,8 +41,13 @@
         color: $font-third-color;
       }
 
+      .date {
+        margin: 0.5rem 0;
+        color: $font-third-color;
+        font-weight: bold;
+      }
+
       .skills {
-        text-align: center;
         margin: 0.5rem 0;
         color: $font-third-color;
         font-weight: bold;

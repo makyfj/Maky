@@ -1,24 +1,26 @@
 export const experiences = [
   {
     id: 1,
-    title: "MMA Official",
-    subTitle: "Front-end developer",
-    skills: "TypeScript, NodeJS, Express, MongoDB, Socket.io, EC2",
+    title: "Adelphi University",
+    subTitle: "Graduate Teaching Assistant",
+    date: "Aug 2021 - Present",
+    skills: "Python",
     bulletPoints: [
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
+      "Planned and tutored exercises to promote their Python programming development",
+      "Taught students function, loops, and classes in Python",
+      "Oversaw groups of students and assisted with academic projects",
     ],
   },
   {
     id: 2,
-    title: "MMA Official",
+    title: "Code Brook",
     subTitle: "Front-end developer",
-    skills: "TypeScript, NodeJS, Express, MongoDB, Socket.io, EC2",
+    date: "Jan 2019 - May 2019",
+    skills: "HTML5, CSS3, JavaScript",
     bulletPoints: [
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
-      "Working on developing a scalable api for an IOS and Android App together with a team of 4.",
+      "Worked on developing an user interface with a team of 3 members",
+      "Implemented several designs with modern coding practices",
+      "Used git to manage the changes to work in simultaneous code versions",
     ],
   },
 ];
