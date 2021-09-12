@@ -6,8 +6,8 @@ import {
   backEndSkills,
   programmingSkills,
   otherSkills,
-} from "../../data/skills";
-import Skill from "./skills/skill-item";
+} from "../../../data/skills";
+import Skill from "./skill-item/skill-item";
 
 const Skills = () => {
   return (
