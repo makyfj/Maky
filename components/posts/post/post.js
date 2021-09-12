@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
-import Link from "next/link";
 
 // components
 import classes from "./post.module.scss";
@@ -30,7 +29,7 @@ const PostPage = ({ posts }) => {
       </div>
 
       <div className={classes.none}>
-        {!filteredPosts.length && "No posts found :(, try it again"}
+        {!filteredPosts.length && "No posts found :(, try again"}
       </div>
       {filteredPosts.map((frontMatter, index) => (
         <ul key={index}>
