@@ -22,12 +22,36 @@
 
   p {
     font-size: $font-second-size;
-    margin: 0 10rem;
+    margin: 0 20rem;
     color: $font-third-color;
 
     span {
       font-weight: bold;
       font-size: $font-third-size;
+    }
+  }
+}
+
+@include hero-mobile(1200px) {
+  .hero {
+    p {
+      margin: 0 15rem;
+    }
+  }
+}
+
+@include hero-mobile(1000px) {
+  .hero {
+    p {
+      margin: 0 10rem;
+    }
+  }
+}
+
+@include hero-mobile(900px) {
+  .hero {
+    p {
+      margin: 0 6rem;
     }
   }
 }
