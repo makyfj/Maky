@@ -13,8 +13,8 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Code Brook",
-    subTitle: "Front-end developer",
+    title: "BrookCamp",
+    subTitle: "Front-end Internship",
     date: "Jan 2019 - May 2019",
     skills: "HTML5, CSS3, JavaScript",
     bulletPoints: [

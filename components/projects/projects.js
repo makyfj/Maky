@@ -35,7 +35,11 @@ const Projects = () => {
                 <a href={project.github}>{project.gitHubIcon} GitHub</a>
               </li>
               <li>
-                <a href={project.liveVersion}>{project.liveVersionIcon} Demo</a>
+                {project.liveVersion ? (
+                  <a href={project.liveVersion}>
+                    {project.liveVersionIcon} Demo
+                  </a>
+                ) : null}
               </li>
             </ul>
           </li>
