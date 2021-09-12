@@ -9,7 +9,7 @@ export const socials = [
   },
   {
     id: 2,
-    link: "https://linkein.com/franklinjara-fj",
+    link: "https://linkein.com/in/franklinjara-fj",
     icon: <LinkedInIcon fontSize="large" />,
   },
 ];
