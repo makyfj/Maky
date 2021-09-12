@@ -1,9 +1,16 @@
 # Final Edition: Portfolio
 
 ## Taskade
-[Project management](https://www.taskade.com/d/sh8Qf16A2YJ5eQBC)
+[Taskade - Project Management](https://www.taskade.com/d/sh8Qf16A2YJ5eQBC)
 
 ## Tools
 - Nextjs
-- MongoDB
 - Sass
+- MDX
+
+## Sources
+[Css Tricks Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+[Css Tricks Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[Developer Icons](https://github.com/devicons/devicon)
+
+Time Spend: 1 week
