@@ -2,7 +2,7 @@
 
 .container {
   background-color: $background-third-color;
-  padding: 4rem;
+  padding: 2rem 6rem;
 
   h1 {
     text-align: center;
@@ -23,13 +23,15 @@
 
     .front {
       grid-area: front;
+      padding: 1rem 0;
       box-shadow: 0 1px 8px $background-fourth-color;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      align-items: center;
 
       h3 {
         box-shadow: 0 1px 8px green;
-        margin-top: 3rem;
+        justify-self: center;
       }
     }
 

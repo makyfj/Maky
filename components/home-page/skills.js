@@ -18,12 +18,7 @@ const Skills = () => {
           {frontEndSkills.map((skill, index) => (
             <li key={index}>
               <h4>{skill.name}</h4>
-              <Image
-                src={skill.icon}
-                width={100}
-                height={100}
-                alt={skill.name}
-              />
+              <Image src={skill.icon} width={50} height={50} alt={skill.name} />
             </li>
           ))}
         </ul>
@@ -32,12 +27,7 @@ const Skills = () => {
           {backEndSkills.map((skill, index) => (
             <li key={index}>
               <h4>{skill.name}</h4>
-              <Image
-                src={skill.icon}
-                width={100}
-                height={100}
-                alt={skill.name}
-              />
+              <Image src={skill.icon} width={50} height={50} alt={skill.name} />
             </li>
           ))}
         </ul>
@@ -47,12 +37,7 @@ const Skills = () => {
           {programmingSkills.map((skill, index) => (
             <li key={index}>
               <h4>{skill.name}</h4>
-              <Image
-                src={skill.icon}
-                width={100}
-                height={100}
-                alt={skill.name}
-              />
+              <Image src={skill.icon} width={50} height={50} alt={skill.name} />
             </li>
           ))}
         </ul>
