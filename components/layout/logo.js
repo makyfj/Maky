@@ -7,8 +7,8 @@ const Logo = () => {
       <h1>
         <Image
           src={"/images/site/cool.svg"}
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           alt="Franklin"
         />
         Franklin

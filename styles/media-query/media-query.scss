@@ -1,5 +1,5 @@
-@mixin navbar-mobile {
-  @media only screen and (max-width: 700px) {
+@mixin navbar-mobile($max-width) {
+  @media only screen and (max-width: $max-width) {
     @content;
   }
 }
@@ -43,6 +43,12 @@
 
 @mixin skills-mobile($max-width) {
   @media only screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin logo-mobile($max-width) {
+  @media only screen and (max-width: max-width) {
     @content;
   }
 }

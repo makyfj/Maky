@@ -88,7 +88,7 @@
   }
 }
 
-@include navbar-mobile {
+@include navbar-mobile(700px) {
   .header {
     .right {
       .links {

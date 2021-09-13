@@ -1,8 +1,17 @@
 @import "../../styles/variables/variables.scss";
 @import "../../styles/animations/animations.scss";
+@import "../../styles/media-query/media-query.scss";
 
 .logo {
   text-transform: uppercase;
   font-size: $font-first-half-size;
   font-weight: bold;
+}
+
+@include logo-mobile(500px) {
+  .logo {
+    h1 {
+      font-size: $font-zero-size;
+    }
+  }
 }
