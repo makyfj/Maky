@@ -18,7 +18,6 @@ const Projects = () => {
                 alt={project.title}
                 height={300}
                 width={300}
-                layout="fixed"
               />
             </div>
             <h1>{project.title}</h1>

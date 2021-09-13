@@ -88,3 +88,19 @@
     }
   }
 }
+
+@include projects-mobile(500px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr;
+      gap: 2rem 0rem;
+      padding: 2rem;
+
+      .project {
+        .image {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}
