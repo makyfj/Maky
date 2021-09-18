@@ -7,7 +7,7 @@
   box-shadow: 0 1px 8px $background-fourth-color;
   border-radius: 4px;
   padding: 2rem;
-  margin: 2rem 4rem;
+  margin: 2rem 8rem;
   cursor: pointer;
 
   &:hover {
@@ -62,8 +62,12 @@
 
 @include posts-mobile {
   .container {
+    margin: 2rem 2rem;
     .card {
       .contents {
+        .image {
+          display: none;
+        }
         .content {
           .time {
             font-size: $font-first-half-size;
