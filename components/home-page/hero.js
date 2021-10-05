@@ -14,8 +14,9 @@ const Hero = () => {
       <h1>Franklin Jara</h1>
       <p>
         Student @ Adelphi University pursuing a Master&apos;s Degree in Computer
-        Science. I love <span>coding</span>, and I am working hard to become a
-        great software engineer.
+        Science with specialization in Software Engineering. I love{" "}
+        <span>coding</span>, and I push myself harder than yesterday to become
+        software engineer.
       </p>
       <Social />
     </section>
