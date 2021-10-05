@@ -13,12 +13,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <li key={index} className={classes.project}>
             <div className={classes.image}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                height={300}
-                width={300}
-              />
+              <Image src={project.image} alt={project.title} />
             </div>
             <h1>{project.title}</h1>
             <p className={classes.description}>

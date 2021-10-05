@@ -1,5 +1,6 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
+import logo from "../public/images/site/avatar.jpg";
 
 export const projects = [
   {
@@ -8,7 +9,7 @@ export const projects = [
     description:
       "My first big project using the MERN stack. I also learned and implemented paypal api for payments transactions.",
     skills: "ReactJS, ExpressJS,NodeJS, PayPal API, JavaScript, and MongoDB",
-    image: "/images/site/avatar.jpg",
+    image: logo,
     github: "https://www.github.com/makyfj/ProShop",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://superproshopapp.herokuapp.com",
@@ -21,7 +22,7 @@ export const projects = [
     description:
       "This project was made to implement the Activity Lifecycle and using Auth from different providers.",
     skills: "Java, Google Auth, Android Lifecycle",
-    image: "/images/site/avatar.jpg",
+    image: logo,
     github: "https://www.github.com/makyfj/ShowerThoughts",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
   },
@@ -31,22 +32,22 @@ export const projects = [
     description:
       "First portfolio with ReactJS and Bootstrap UI. I learned how to use components from different libraries.",
     skills: "ReactJS, Bootstrap, JavaScript",
-    image: "/images/site/avatar.jpg",
+    image: logo,
     github: "https://github.com/makyfj",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://github.com/makyfj",
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
-    title: "Drag and Drop",
-    quickTitle: "Manipulation with Vanilla TypeScript",
+    title: "Idea Net",
+    quickTitle: "Project using MERN stack with Vite as front end tooling",
     description:
-      "First project using vanilla TypeScript and interacting with DOM",
-    skills: "TypeScript, HTML5, CSS3",
-    image: "/images/site/avatar.jpg",
-    github: "https://github.com/makyfj/DragAndDrop",
+      "Project to allows to share your ideas in the world wide web!!. It uses jwt for authentication. As well, using redux toolkit for state management. Using vitejs instead for cra because it is faster ;). Backend with MongoDB, Express and NodeJS. Front end is hosted @ Netlify and Back end is hosted @ Heroku",
+    skills: "React, Vite, MongoDB, Express, NodeJS, JWT, Heroku, Netlify",
+    image: logo,
+    github: "https://github.com/makyfj/IdeaNet.git",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
-    liveVersion: "https://boring-goldwasser-bde770.netlify.app/",
+    liveVersion: "https://idea-net.netlify.app",
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
@@ -56,7 +57,7 @@ export const projects = [
       "E-commerce for farmers to provide their service and goods. Implemented payment system with Stripe and maps with Leaflet Using PHP, MySQL, HTML5, CSS3, JavaScript, jQuery",
     skills:
       "ReactJS, GraphQL Apollo, Sequelize ORM, MySQL, NodeJS, ExpressJS, Styled Components, TypeScript, JavaScript, Google OAUTH, Cloudinary",
-    image: "/images/site/avatar.jpg",
+    image: logo,
     github: "https://www.github.com/makyfj/farmstand",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://www.farmstandwebsite.com",
@@ -67,7 +68,7 @@ export const projects = [
     quickTitle: "Simple project that counts down until I see my soulmate",
     description: "Simple project with vanilla JavaScript",
     skills: "JavaScript",
-    image: "/images/site/avatar.jpg",
+    image: logo,
     github: "https://www.github.com/makyfj/countdownTimer",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://sydneyandfranklinforever.netlify.app/",

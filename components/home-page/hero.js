@@ -1,4 +1,5 @@
 import Image from "next/image";
+import profile from "../../public/images/site/avatar.jpg";
 
 // components
 import Social from "./social";
@@ -8,12 +9,7 @@ const Hero = () => {
   return (
     <section className={classes.hero}>
       <div className={classes.image}>
-        <Image
-          src="/images/site/avatar.jpg"
-          alt="Image showing Franklin"
-          width={300}
-          height={300}
-        />
+        <Image src={profile} alt="Image showing Franklin" />
       </div>
       <h1>Franklin Jara</h1>
       <p>

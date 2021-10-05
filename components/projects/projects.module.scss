@@ -44,8 +44,10 @@
       .description {
         color: $font-first-color;
         padding: 0.5rem 0;
+        line-height: 1.5rem;
         span {
           color: $font-third-color;
+          font-weight: bold;
         }
       }
 
@@ -55,6 +57,7 @@
 
         span {
           color: $font-third-color;
+          font-weight: bold;
         }
       }
 
