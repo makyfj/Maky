@@ -17,6 +17,7 @@
     "@material-ui/icons": "^4.11.2",
     "date-fns": "^2.23.0",
     "devicon": "^2.14.0",
+    "esbuild": "^0.13.6",
     "framer-motion": "^4.1.17",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
