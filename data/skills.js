@@ -63,10 +63,10 @@ export const backEndSkills = [
     name: "MySQL",
     icon: mysql,
   },
-  {
-    name: "GraphQL",
-    icon: graphql,
-  },
+  // {
+  //   name: "GraphQL",
+  //   icon: graphql,
+  // },
 ];
 
 export const programmingSkills = [

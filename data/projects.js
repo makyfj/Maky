@@ -55,8 +55,7 @@ export const projects = [
     quickTitle: "E-commerce for farmers to provide their goods and services",
     description:
       "E-commerce for farmers to provide their service and goods. Implemented payment system with Stripe and maps with Leaflet Using PHP, MySQL, HTML5, CSS3, JavaScript, jQuery",
-    skills:
-      "ReactJS, GraphQL Apollo, Sequelize ORM, MySQL, NodeJS, ExpressJS, Styled Components, TypeScript, JavaScript, Google OAUTH, Cloudinary",
+    skills: "PHP, HTML5, CSS3, jQuery, JavaScript, Stripe, Leaflet",
     image: logo,
     github: "https://www.github.com/makyfj/farmstand",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
