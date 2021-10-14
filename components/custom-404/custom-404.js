@@ -5,7 +5,7 @@ const Custom404 = () => {
   return (
     <>
       <main className={classes.container}>
-        <h1>404 - Page Not Found</h1>
+        <h1>404 - Page Not Found - Try again</h1>
         <Button href="/" name="Home" />
       </main>
     </>
