@@ -28,11 +28,13 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "reading-time": "^1.5.0",
-    "sass": "^1.39.0",
-    "webpack": "^5.58.2"
+    "sharp": "^0.29.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "webpack": "^5.58.2"
   }
 }
