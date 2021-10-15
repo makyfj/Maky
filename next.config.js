@@ -1,5 +1,5 @@
 const path = require("path");
-const withImages = withImages();
+const withImages = require("next-images");
 
 module.exports = withImages({
   reactStrictMode: true,
