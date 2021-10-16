@@ -27,18 +27,6 @@ export const projects = [
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
   },
   {
-    title: "Portfolio",
-    quickTitle: "Portfolio with ReactJS",
-    description:
-      "First portfolio with ReactJS and Bootstrap UI. I learned how to use components from different libraries.",
-    skills: "ReactJS, Bootstrap, JavaScript",
-    image: logo,
-    github: "https://github.com/makyfj",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
-    liveVersion: "https://github.com/makyfj",
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
-  },
-  {
     title: "Idea Net",
     quickTitle: "Project using MERN stack with Vite as front end tooling",
     description:
@@ -65,8 +53,9 @@ export const projects = [
   {
     title: "Countdown Lover",
     quickTitle: "Simple project that counts down until I see my soulmate",
-    description: "Simple project with vanilla JavaScript",
-    skills: "JavaScript",
+    description:
+      "The project was done using simple vanilla js, but I've decided to use NextJS. Take a look at the new version :)",
+    skills: "JavaScript, NextJS",
     image: logo,
     github: "https://www.github.com/makyfj/countdownTimer",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,

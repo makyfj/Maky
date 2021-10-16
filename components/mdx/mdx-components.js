@@ -13,8 +13,8 @@ import NextLink from "next/link";
 const CustomLink = (props) => {
   const { colorMode } = useColorMode();
   const color = {
-    light: "blue.500",
-    dark: "blue.500",
+    light: "blue.200",
+    dark: "blue.200",
   };
 
   const href = props.href;
@@ -34,8 +34,8 @@ const CustomLink = (props) => {
 const Quote = (props) => {
   const { colorMode } = useColorMode();
   const bgColor = {
-    light: "blue.50",
-    dark: "blue.900",
+    light: "blue.250",
+    dark: "blue.200",
   };
 
   return (

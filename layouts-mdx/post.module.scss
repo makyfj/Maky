@@ -15,15 +15,18 @@
       text-align: center;
       padding: 2rem 0;
       color: $font-second-color;
+      font-size: $font-fourth-size;
     }
 
     .summary {
       font-size: $font-first-half-size;
+      text-align: center;
     }
 
     .time {
       padding: 1rem 0;
       font-size: $font-first-half-size;
+      text-align: center;
 
       span {
         color: $font-third-color;
@@ -33,6 +36,7 @@
     .reading {
       font-size: $font-first-half-size;
       padding-bottom: 2rem;
+      text-align: center;
       span {
         color: $font-third-color;
       }
