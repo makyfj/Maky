@@ -104,7 +104,7 @@ const DocsHeading = (props) => (
 const Hr = () => {
   const { colorMode } = useColorMode();
   const borderColor = {
-    light: "gray.200",
+    light: "gray.100",
     dark: "gray.600",
   };
 
@@ -112,7 +112,7 @@ const Hr = () => {
 };
 
 const MDXComponents = {
-  h1: (props) => <Heading as="h1" size="xl" my={4} {...props} />,
+  h1: (props) => <Heading as="h1" size="xl" m={2} {...props} />,
   h2: (props) => <DocsHeading as="h2" size="lg" fontWeight="bold" {...props} />,
   h3: (props) => <DocsHeading as="h3" size="md" fontWeight="bold" {...props} />,
   h4: (props) => <DocsHeading as="h4" size="sm" fontWeight="bold" {...props} />,
