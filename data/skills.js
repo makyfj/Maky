@@ -6,6 +6,7 @@ import react from "devicon/icons/react/react-original.svg";
 import redux from "devicon/icons/redux/redux-original.svg";
 import materialui from "devicon/icons/materialui/materialui-original.svg";
 import typescript from "devicon/icons/typescript/typescript-original.svg";
+import nextjs from "devicon/icons/nextjs/nextjs-original.svg";
 
 // back end
 import mongodb from "devicon/icons/mongodb/mongodb-plain.svg";
@@ -13,6 +14,9 @@ import express from "devicon/icons/express/express-original.svg";
 import nodejs from "devicon/icons/nodejs/nodejs-plain.svg";
 import mysql from "devicon/icons/mysql/mysql-plain.svg";
 import graphql from "devicon/icons/graphql/graphql-plain.svg";
+import postgresql from "devicon/icons/postgresql/postgresql-plain.svg";
+import nestjs from "devicon/icons/nestjs/nestjs-plain.svg";
+import heroku from "devicon/icons/heroku/heroku-original.svg";
 
 // programming language
 import python from "devicon/icons/python/python-original.svg";
@@ -43,6 +47,7 @@ export const frontEndSkills = [
   },
   { name: "Material-UI", icon: materialui },
   { name: "TypeScript", icon: typescript },
+  { name: "NextJS", icon: nextjs },
 ];
 
 export const backEndSkills = [
@@ -63,10 +68,22 @@ export const backEndSkills = [
     name: "MySQL",
     icon: mysql,
   },
-  // {
-  //   name: "GraphQL",
-  //   icon: graphql,
-  // },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "NestJS",
+    icon: nestjs,
+  },
+  {
+    name: "Heroku",
+    icon: heroku,
+  },
 ];
 
 export const programmingSkills = [

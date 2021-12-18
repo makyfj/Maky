@@ -11,16 +11,4 @@ export const experiences = [
       "Participated in the supervision of practical work, advising on skills, methods and techniques to assist the transfer of knowledge",
     ],
   },
-  {
-    id: 2,
-    title: "BrookCamp",
-    subTitle: "Front-end Internship",
-    date: "Jan 2019 - May 2019",
-    skills: "HTML5, CSS3, JavaScript",
-    bulletPoints: [
-      "Communicated with lead developer to implement several designs with modern coding practices",
-      "Developed an user interface with a team of 3 members",
-      "Collaborated with developers using it to manage the changes to work in simultaneous code versions",
-    ],
-  },
 ];

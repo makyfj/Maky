@@ -4,34 +4,37 @@ import logo from "../public/images/site/avatar.jpg";
 
 export const projects = [
   {
-    title: "ProShop",
-    quickTitle: "E-commerce with React, NodeJs, ExpressJs, and MongoDB",
+    title: "Powerful",
+    quickTitle: "Powerful is a simple and intuitive workout experience",
     description:
-      "My first big project using the MERN stack. I also learned and implemented paypal api for payments transactions.",
-    skills: "ReactJS, ExpressJS,NodeJS, PayPal API, JavaScript, and MongoDB",
+      "This project allows to track your workout journey by creating workouts and progress. It uses NextJS, RTK Query for state management, and Tailwindcss for the client side. For the server it uses NodeJS, ExpressJS, PostgresSQL, Prisma, JWT and TypeScript",
+    skills:
+      "NextJS, Redux, Redux Toolkit, RTK Query, Tailwindcss, PostgresSQL, Prisma, JWT, Express, NodeJS, TypeScript, Cloudinary, Heroku, Vercel",
     image: logo,
-    github: "https://www.github.com/makyfj/ProShop",
+    github: "https://www.github.com/makyfj/Powerful",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
-    liveVersion: "https://superproshopapp.herokuapp.com",
+    liveVersion: "https://powerful.vercel.app",
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
-
   {
-    title: "Shower Thoughts",
-    quickTitle: "Final Project for Android class",
+    title: "IFT",
+    quickTitle: "IFT is a place to post unique items and objects",
     description:
-      "This project was made to implement the Activity Lifecycle and using Auth from different providers.",
-    skills: "Java, Google Auth, Android Lifecycle",
+      "This project allows users to post pictures of unique items that they find interesting. It has dark and light mode. It uses NextJS, Chakra-UI, Redux Toolkit, and TypeScript for the client side. For the server it uses NestJS, JWT, PostgresSQL, TypeORM and TypeScript.",
+    skills:
+      "NextJS, Chakra-UI, Redux Toolkit, TypeScript, NestJS, JWT, PostgresSQL, TypeORM, Cloudinary, Heroku, Vercel",
     image: logo,
-    github: "https://www.github.com/makyfj/ShowerThoughts",
+    github: "https://www.github.com/makyfj/IFT",
+    liveVersion: "https://ift.vercel.app",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
   },
   {
     title: "Idea Net",
     quickTitle: "Project using MERN stack with Vite as front end tooling",
     description:
-      "Project to allows to share your ideas in the world wide web!!. It uses jwt for authentication. As well, using redux toolkit for state management. Using vitejs instead for cra because it is faster ;). Backend with MongoDB, Express and NodeJS. Front end is hosted @ Netlify and Back end is hosted @ Heroku",
-    skills: "React, Vite, MongoDB, Express, NodeJS, JWT, Heroku, Netlify",
+      "Project to allows to share your ideas in the world wide web!!. It uses jwt for authentication. As well, using redux toolkit for state management. Using vitejs instead for cra because it is faster ;). Backend with MongoDB, Express and NodeJS. Front end is hosted @ Netlify and Back end is hosted @ Heroku.",
+    skills:
+      "React, Vite, MongoDB, Express, NodeJS, JWT, Heroku, Netlify, JavaScript, Heroku",
     image: logo,
     github: "https://github.com/makyfj/IdeaNet.git",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
@@ -39,27 +42,41 @@ export const projects = [
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
-    title: "Farmstand",
-    quickTitle: "E-commerce for farmers to provide their goods and services",
+    title: "ITS: Issue Tracking System",
+    quickTitle: "Web-Base Issue Tracking System",
     description:
-      "E-commerce for farmers to provide their service and goods. Implemented payment system with Stripe and maps with Leaflet Using PHP, MySQL, HTML5, CSS3, JavaScript, jQuery",
-    skills: "PHP, HTML5, CSS3, jQuery, JavaScript, Stripe, Leaflet",
+      "Project allows to keep track of multiple issues/tickets related to a specific category. The server side uses MongoDB, Express, TypeScript and JWT. The client side uses NextJS, Redux Toolkit and JavaScript. This project was a group project, I worked in the backend and the logic for the front end.",
+    skills:
+      "MongoDB, Express, NodeJS, TypeScript, JWT, Redux Toolkit, CSS3, NextJS, JavaScript, Heroku, Vercel",
     image: logo,
-    github: "https://www.github.com/makyfj/farmstand",
+    github: "https://www.github.com/makyfj/ITS",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
-    liveVersion: "https://www.farmstandwebsite.com",
+    liveVersion: "https://its-client.vercel.app",
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
     title: "Countdown Lover",
-    quickTitle: "Simple project that counts down until I see my soulmate",
+    quickTitle:
+      "Simple project that counts down the time until I see my soulmate",
     description:
-      "The project was done using simple vanilla js, but I've decided to use NextJS. Take a look at the new version :)",
-    skills: "JavaScript, NextJS",
+      "Using NextJS with Material-UI to create a simple grid yet aesthetically pleasing to look at.",
+    skills: "JavaScript, NextJS, Material-UI",
     image: logo,
     github: "https://www.github.com/makyfj/countdownTimer",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://sydneyandfranklinforever.netlify.app/",
+    liveVersionIcon: <LinkIcon fontSize="inherit" />,
+  },
+  {
+    title: "Adelphi News",
+    quickTitle:
+      "Adelphi News scrapper to read the most recent articles posted on Adelphi University Web Site",
+    description:
+      "This project allows news/articles to be scrapped from the Adelphi Web Site with BeautifulSoup4 and store them in a JSON file that will be stored in a Alexa Skill. It uses Alexa-SDK for Python to play with Alexa Skill.",
+    skills: "Python, Alexa Skill, Alexa-SDK, BeautifulSoup4, JSON",
+    image: logo,
+    github: "https://www.github.com/makyfj/AdelphiNews",
+    gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
 ];
