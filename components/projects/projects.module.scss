@@ -28,6 +28,12 @@
         @include card-hover($background-fourth-color);
       }
 
+      .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .image {
         display: flex;
         align-items: center;

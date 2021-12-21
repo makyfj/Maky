@@ -10,6 +10,7 @@ export const projects = [
       "This project allows to track your workout journey by creating workouts and progress. It uses NextJS, RTK Query for state management, and Tailwindcss for the client side. For the server it uses NodeJS, ExpressJS, PostgresSQL, Prisma, JWT and TypeScript",
     skills:
       "NextJS, Redux, Redux Toolkit, RTK Query, Tailwindcss, PostgresSQL, Prisma, JWT, Express, NodeJS, TypeScript, Cloudinary, Heroku, Vercel",
+    video: "https://www.youtube.com/watch?v=1D3LTXVLK0M",
     image: logo,
     github: "https://www.github.com/makyfj/Powerful",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
@@ -23,6 +24,7 @@ export const projects = [
       "This project allows users to post pictures of unique items that they find interesting. It has dark and light mode. It uses NextJS, Chakra-UI, Redux Toolkit, and TypeScript for the client side. For the server it uses NestJS, JWT, PostgresSQL, TypeORM and TypeScript.",
     skills:
       "NextJS, Chakra-UI, Redux Toolkit, TypeScript, NestJS, JWT, PostgresSQL, TypeORM, Cloudinary, Heroku, Vercel",
+    video: "https://www.youtube.com/watch?v=m5oCKuhtFh0",
     image: logo,
     github: "https://www.github.com/makyfj/IFT",
     liveVersion: "https://ift.vercel.app",
@@ -35,6 +37,7 @@ export const projects = [
       "Project to allows to share your ideas in the world wide web!!. It uses jwt for authentication. As well, using redux toolkit for state management. Using vitejs instead for cra because it is faster ;). Backend with MongoDB, Express and NodeJS. Front end is hosted @ Netlify and Back end is hosted @ Heroku.",
     skills:
       "React, Vite, MongoDB, Express, NodeJS, JWT, Heroku, Netlify, JavaScript, Heroku",
+    video: "https://www.youtube.com/watch?v=A7qb1hhFIlk",
     image: logo,
     github: "https://github.com/makyfj/IdeaNet.git",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
@@ -48,6 +51,7 @@ export const projects = [
       "Project allows to keep track of multiple issues/tickets related to a specific category. The server side uses MongoDB, Express, TypeScript and JWT. The client side uses NextJS, Redux Toolkit and JavaScript. This project was a group project, I worked in the backend and the logic for the front end.",
     skills:
       "MongoDB, Express, NodeJS, TypeScript, JWT, Redux Toolkit, CSS3, NextJS, JavaScript, Heroku, Vercel",
+    video: "https://www.youtube.com/watch?v=Wx6gnYwG-S4",
     image: logo,
     github: "https://www.github.com/makyfj/ITS",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
@@ -61,6 +65,7 @@ export const projects = [
     description:
       "Using NextJS with Material-UI to create a simple grid yet aesthetically pleasing to look at.",
     skills: "JavaScript, NextJS, Material-UI",
+    video: "",
     image: logo,
     github: "https://www.github.com/makyfj/countdownTimer",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,
@@ -74,6 +79,7 @@ export const projects = [
     description:
       "This project allows news/articles to be scrapped from the Adelphi Web Site with BeautifulSoup4 and store them in a JSON file that will be stored in a Alexa Skill. It uses Alexa-SDK for Python to play with Alexa Skill.",
     skills: "Python, Alexa Skill, Alexa-SDK, BeautifulSoup4, JSON",
+    video: "",
     image: logo,
     github: "https://www.github.com/makyfj/AdelphiNews",
     gitHubIcon: <GitHubIcon fontSize="inherit" />,

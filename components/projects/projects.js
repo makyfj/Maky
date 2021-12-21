@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 // components
 import { projects } from "../../data/projects";
@@ -6,15 +7,22 @@ import classes from "./projects.module.scss";
 import Button from "../button/button";
 
 const Projects = () => {
+  console.log(projects);
   return (
     <main className={classes.container}>
       <h1 className={classes.title}>My Favorite Projects</h1>
       <ul className={classes.projects}>
         {projects.map((project, index) => (
           <li key={index} className={classes.project}>
-            <div className={classes.image}>
-              <Image src={project.image} alt={project.title} />
-            </div>
+            {project.video !== "" ? (
+              <div className={classes.video}>
+                <ReactPlayer url={project.video} width={300} height={300} />
+              </div>
+            ) : (
+              <div className={classes.image}>
+                <Image src={project.image} alt={project.title} />
+              </div>
+            )}
             <h1>{project.title}</h1>
             <p className={classes.description}>
               <span>Description: </span>
