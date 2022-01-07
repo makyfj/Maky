@@ -108,10 +108,11 @@
   .container {
     .projects {
       grid-template-columns: 1fr;
-      gap: 2rem 0rem;
+      gap: 2rem;
       padding: 2rem;
 
       .project {
+        margin-left: -0.7rem;
         .image {
           padding: 2rem;
         }
