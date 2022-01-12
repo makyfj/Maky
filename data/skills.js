@@ -7,6 +7,7 @@ import redux from "devicon/icons/redux/redux-original.svg";
 import materialui from "devicon/icons/materialui/materialui-original.svg";
 import typescript from "devicon/icons/typescript/typescript-original.svg";
 import nextjs from "devicon/icons/nextjs/nextjs-original.svg";
+import tailwindcss from "devicon/icons/tailwindcss/tailwindcss-plain.svg";
 
 // back end
 import mongodb from "devicon/icons/mongodb/mongodb-plain.svg";
@@ -33,6 +34,7 @@ export const frontEndSkills = [
     name: "CSS3",
     icon: css3,
   },
+  { name: "TypeScript", icon: typescript },
   {
     name: "JavaScript",
     icon: javascript,
@@ -45,8 +47,11 @@ export const frontEndSkills = [
     name: "Redux",
     icon: redux,
   },
+  {
+    name: "Tailwindcss",
+    icon: tailwindcss,
+  },
   { name: "Material-UI", icon: materialui },
-  { name: "TypeScript", icon: typescript },
   { name: "NextJS", icon: nextjs },
 ];
 

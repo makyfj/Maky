@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     title: "Adelphi University",
     subTitle: "Graduate Teaching Assistant",
-    date: "Aug 2021 - Present",
+    date: "Aug 2021 - Dec 2021",
     skills: "Python",
     bulletPoints: [
       "Delivered a range of teaching and assessment activities, including tutorials and tutoring.",
