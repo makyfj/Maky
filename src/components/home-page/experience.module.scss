@@ -1,0 +1,93 @@
+@import "@/styles/variables/variables.scss";
+@import "@/styles/media-query/media-query.scss";
+@import "@/styles/animations/animations.scss";
+
+.experiences {
+  background-color: $background-third-color;
+
+  .title {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: $font-third-size;
+    color: $font-third-color;
+  }
+
+  .experience {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+    align-content: stretch;
+    align-items: stretch;
+
+    .content {
+      margin: 0 1rem;
+      background-color: $background-second-color;
+      box-shadow: 0 1px 8px $background-fourth-color;
+      border-radius: 4px;
+      padding: 2rem;
+      &:hover {
+        @include card-hover($background-fourth-color);
+      }
+
+      h2 {
+        margin: 1rem 0;
+        text-align: center;
+        color: $font-second-color;
+      }
+
+      h3 {
+        text-align: center;
+        margin: 1rem 0;
+        color: $font-third-color;
+      }
+
+      .date {
+        margin: 0.5rem 0;
+        color: $font-third-color;
+        font-weight: bold;
+      }
+
+      .skills {
+        margin: 0.5rem 0;
+        color: $font-third-color;
+        font-weight: bold;
+      }
+
+      .bulletPoint {
+        margin-bottom: 1rem;
+
+        li {
+          list-style-type: "* ";
+
+          p {
+            color: $font-first-color;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include experience-mobile {
+  .experiences {
+    .experience {
+      flex-direction: column;
+
+      .content {
+        box-shadow: 0 1px 8px $background-fourth-color;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+
+        h2 {
+          text-align: center;
+        }
+
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

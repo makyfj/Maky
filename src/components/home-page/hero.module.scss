@@ -1,0 +1,66 @@
+@import "@/styles/variables/variables.scss";
+@import "@/styles/media-query/media-query.scss";
+
+.hero {
+  text-align: center;
+  padding: 6rem 0 4rem 0;
+  background-color: $background-first-color;
+
+  .image {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: $font-third-size;
+    margin: 1.5rem 0;
+    color: $font-second-color;
+  }
+
+  p {
+    font-size: $font-second-size;
+    margin: 0 20rem;
+    color: $font-third-color;
+
+    span {
+      font-weight: bold;
+      font-size: $font-third-size;
+    }
+  }
+}
+
+@include hero-mobile(1200px) {
+  .hero {
+    p {
+      margin: 0 15rem;
+    }
+  }
+}
+
+@include hero-mobile(1000px) {
+  .hero {
+    p {
+      margin: 0 10rem;
+    }
+  }
+}
+
+@include hero-mobile(900px) {
+  .hero {
+    p {
+      margin: 0 6rem;
+    }
+  }
+}
+
+@include hero-mobile(800px) {
+  .hero {
+    p {
+      margin: 0 4rem;
+    }
+  }
+}

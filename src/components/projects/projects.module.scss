@@ -1,0 +1,122 @@
+@import "@/styles/variables/variables.scss";
+@import "@/styles/media-query/media-query.scss";
+@import "@/styles/animations/animations.scss";
+
+.container {
+  background-color: $background-third-color;
+  padding: 3rem 0;
+
+  .title {
+    color: $font-third-color;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 4rem;
+
+    .project {
+      box-shadow: 0 1px 8px $background-fourth-color;
+      border-radius: 4px;
+      padding: 1rem;
+      background-color: $background-second-color;
+
+      &:hover {
+        @include card-hover($background-fourth-color);
+      }
+
+      .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      h1 {
+        color: $font-second-color;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+
+      .description {
+        color: $font-first-color;
+        padding: 0.5rem 0;
+        line-height: 1.8rem;
+        font-size: $font-first-half-size;
+        span {
+          color: $font-third-color;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+
+      .skills {
+        color: $font-first-color;
+        padding: 0.5rem 0;
+        font-size: $font-first-half-size;
+        line-height: 1.8rem;
+
+        span {
+          color: $font-third-color;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+
+      .links {
+        margin: 1rem 0;
+        font-size: $font-first-half-size;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          a {
+            color: $font-third-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include projects-mobile(1250px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@include projects-mobile(900px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include projects-mobile(500px) {
+  .container {
+    .projects {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+
+      .project {
+        margin-left: -0.7rem;
+        .image {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}
