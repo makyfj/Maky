@@ -1,5 +1,7 @@
 import Image from "next/image";
 import ReactPlayer from "react-player";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkIcon from "@material-ui/icons/Link";
 
 // components
 import { projects } from "@/data/projects";
@@ -33,12 +35,14 @@ const Projects = () => {
             </p>
             <ul className={classes.links}>
               <li>
-                <a href={project.github}>{project.gitHubIcon} GitHub</a>
+                <a href={project.github}>
+                  <GitHubIcon fontSize="inherit" /> GitHub
+                </a>
               </li>
               <li>
                 {project.liveVersion ? (
                   <a href={project.liveVersion}>
-                    {project.liveVersionIcon} Demo
+                    <LinkIcon fontSize="inherit" /> Demo
                   </a>
                 ) : null}
               </li>

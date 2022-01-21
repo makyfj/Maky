@@ -1,8 +1,17 @@
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkIcon from "@material-ui/icons/Link";
 import logo from "../../public/images/site/avatar.jpg";
 
-export const projects = [
+interface Project {
+  title: string;
+  quickTitle: string;
+  description: string;
+  skills: string;
+  video: string;
+  image: StaticImageData;
+  github: string;
+  liveVersion?: string;
+}
+
+export const projects: Project[] = [
   {
     title: "Powerful",
     quickTitle: "Powerful is a simple and intuitive workout experience",
@@ -13,9 +22,7 @@ export const projects = [
     video: "https://www.youtube.com/watch?v=1D3LTXVLK0M",
     image: logo,
     github: "https://www.github.com/makyfj/Powerful",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://powerful.vercel.app",
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
     title: "IFT",
@@ -28,7 +35,6 @@ export const projects = [
     image: logo,
     github: "https://www.github.com/makyfj/IFT",
     liveVersion: "https://ift.vercel.app",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
   },
   {
     title: "Idea Net",
@@ -40,9 +46,7 @@ export const projects = [
     video: "https://www.youtube.com/watch?v=A7qb1hhFIlk",
     image: logo,
     github: "https://github.com/makyfj/IdeaNet.git",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://idea-net.netlify.app",
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
     title: "ITS: Issue Tracking System",
@@ -54,9 +58,7 @@ export const projects = [
     video: "https://www.youtube.com/watch?v=Wx6gnYwG-S4",
     image: logo,
     github: "https://www.github.com/makyfj/ITS",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://its-client.vercel.app",
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
     title: "Countdown Lover",
@@ -68,9 +70,7 @@ export const projects = [
     video: "",
     image: logo,
     github: "https://www.github.com/makyfj/countdownTimer",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
     liveVersion: "https://sydneyandfranklinforever.netlify.app/",
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
   {
     title: "Adelphi News",
@@ -82,7 +82,5 @@ export const projects = [
     video: "",
     image: logo,
     github: "https://www.github.com/makyfj/AdelphiNews",
-    gitHubIcon: <GitHubIcon fontSize="inherit" />,
-    liveVersionIcon: <LinkIcon fontSize="inherit" />,
   },
 ];

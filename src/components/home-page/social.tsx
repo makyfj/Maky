@@ -1,6 +1,6 @@
 // components
 import classes from "./social.module.scss";
-import { socials } from "../../data/socials";
+import { socials } from "@/data/socials";
 
 const Social = () => {
   return (
